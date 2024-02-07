@@ -1,8 +1,9 @@
-import { Box, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import * as THREE from "three";
 import { CustomText } from "./CustomText";
+import { PinkPaper } from "./PinkPaper";
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
         far: 300,
       }}
     >
-      <color attach="background" args={["#171d6c"]} />
+      <PinkPaper />
       <ambientLight intensity={0.5} />
       <CustomText />
       <OrbitControls />
